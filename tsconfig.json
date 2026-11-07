@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                // Latest JS features
+    "module": "CommonJS",              // Node.js compatibility
+    "strict": true,                    // Enable all strict type checks
+    "esModuleInterop": true,           // Allow default imports from CommonJS
+    "skipLibCheck": true,              // Faster builds, skip type checks in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",        // Standard Node resolution
+    "resolveJsonModule": true,         // Import JSON files
+    "isolatedModules": true,           // Required for transpilers like Babel
+    "noEmit": true,                    // Don’t output JS, just type‑check
+    "types": ["node", "@playwright/test"] // Include Node + Playwright types
+  },
+  "include": ["tests", "src"],         // Adjust to your project folders
+  "exclude": ["node_modules"]
+}
